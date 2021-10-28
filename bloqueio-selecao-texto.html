@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<style>
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.all {
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+</style>
+  
+<body>
+    
+<p>You should be able to select this text.</p>
+<p class="unselectable">Hey, you can't select this text!</p>
+<p class="all">Clicking once will select all of this text.</p>
+
+</body>
+</html>
