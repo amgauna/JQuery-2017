@@ -1,3 +1,6 @@
+// script completo para que seja bloqueada a tela para não copiar nada 
+// e também para não imprimir, se for dar ctrl+p a impressão não abre
+
 <script type="text/javascript">
   // Combinação para bloquear ctrl+c ctrl+v
  var t_cel,tc_ln;
