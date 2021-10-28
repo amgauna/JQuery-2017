@@ -1,2 +1,3 @@
-# JavaScript-Book-Exemplos
-Testando os exemplos de códigos que estão dentro de um livro (papel) que eu estou estudando
+# JavaScript
+
+## Eu estou Testando códigos exemplo que estão dentro de livros que estou estudando
