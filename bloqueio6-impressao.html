@@ -1,0 +1,57 @@
+// Como bloquear o botão CTRL e impedir impressão de página com Javascript
+
+<html>
+<head>
+<title>Titulo</title>
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+
+<style>
+/* Arquivo print.css */
+body {}
+#naoimprime { display: none; }
+#imprime { display:block; }
+</style>
+
+<script language="JavaScript">
+function alerta(){
+alert('A página não pode ser salva.');
+return false;
+}
+function verificaBotao(oEvent){
+var oEvent = oEvent ? oEvent : window.event;
+var tecla = (oEvent.keyCode) ? oEvent.keyCode : oEvent.which;
+if(tecla == 17 || tecla == 44|| tecla == 106){
+alerta();
+}
+}
+</SCRIPT>
+
+<script language="JavaScript">
+document.onkeypress = verificaBotao;
+document.onkeydown = verificaBotao;
+document.oncontextmenu = alerta;
+</script>
+
+</head>
+
+<body>
+<div id="naoimprime">
+Minha página com informações confidenciais.<br>
+É necessário fazer bloquear o imprimir.<br>
+A pessoa não pode imprimir esse documento, <br>
+se for imprimir, é necessário clica no nosso botão primeiro
+que faz o log.
+</div>
+<div id="imprime">
+<p>
+This document is block! Please use our button to do this!.
+<br>
+</p>
+</div>
+</body>
+</html>
+
+
+Read more: http://www.linhadecodigo.com.br/artigo/3652/como-bloquear-o-botao-ctrl-e-impedir-impressao-de-pagina-com-javascript.aspx#ixzz7Ac67DJZ5
+
+
