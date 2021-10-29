@@ -1,7 +1,7 @@
 @IF EXIST "%~dp0\node.exe" (
-  "%~dp0\node.exe"  "%~dp0\..\dist\pnpx.js" %*
+  "%~dp0\node.exe"  "%~dp0\node_modules\corepack\dist\pnpx.js" %*
 ) ELSE (
   @SETLOCAL
   @SET PATHEXT=%PATHEXT:;.JS;=;%
-  node  "%~dp0\..\dist\pnpx.js" %*
+  node  "%~dp0\node_modules\corepack\dist\pnpx.js" %*
 )
