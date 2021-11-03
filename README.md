@@ -1,4 +1,4 @@
-# JavaScript / JQuery / Ajax.js / Node.js / Exemplos de Código
+# JavaScript / JQuery / Exemplos de Código
 
 ## Eu estou testando códigos exemplo que estou estudando
 
@@ -15,7 +15,5 @@
 ## JQuery Glossary (Developer Mozilla Docs) =  https://developer.mozilla.org/pt-BR/docs/Glossary/jQuery
 
 ## JQuery API Documentation = https://api.jquery.com/
-
-## Tutorial Node.js (W3 Schools) = https://www.w3schools.com/nodejs/default.asp
 
 ## Tutorial Ajax.js (W3 Schools) = https://www.w3schools.com/js/js_ajax_intro.asp
