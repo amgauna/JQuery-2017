@@ -26,8 +26,9 @@ else
     e.stopPropagation();
     e.preventDefault();
     };
-   }else if(e.type=="keyup"){
-   }else if(e.type=="keypress"){}
+   }
+   else if(e.type=="keyup"){}
+   else if(e.type=="keypress"){}
  }
  
 function click() {
