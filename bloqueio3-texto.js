@@ -11,7 +11,8 @@ $("#textA").bind('paste', function() {
 $("#textA").bind('cut', function() {
     $('span').text('cut behaviour detected!')
 });
-If you are using jQuery 1.4x, it’s support the multiple events declaration like following :
+
+// If you are using jQuery 1.4x, it’s support the multiple events declaration like following :
 
 
 $("#textA").bind({

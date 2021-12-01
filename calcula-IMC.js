@@ -1,49 +1,38 @@
 
 <script type="text/javascript" charset="UTF-8">
 
-  var math = require('mathjs');
+import { create, all } from 'mathjs'
+import * as numbers from 'numbers'
 
-    function pulaLinha()
-{    
-    document.write("<br>");
-    document.write("<br>");
-}
+var express = require('express');
+var app = express.createServer();
+var Imc = 0;
+var math = require('mathjs');
 
-    function mostra(frase) 
-{
-    document.write(frase);
-    pulaLinha();
-}
+function pulaLinha() { document.write(" <br> <br> ") }
 
-    function calculaImc(peso, altura) 
-{
-    return peso / (altura * altura);
-}
+function mostra(frase) { document.write(frase) }
 
 var nome = prompt("Informe seu nome!");
+pulalinha();
 
 var pesoInformado = prompt(nome  + ", Informe seu peso"); 
+pulalinha();
 
 var alturaInformada = prompt(nome + ", Informe sua altura");
+pulalinha();
 
-var imc = calculaImc(pesoInformado, alturaInformada);
+function calculaImc(Imc) { Imc = math.round(alturaInformada/pesoInformado) }
 
+document.write(nome + ", seu imc é " + math.round(Imc));
+pulalinha();
 
-mostra(nome + ", seu imc é " + Math.round(imc));
+if Imc <= 17 { document.write("Você esta abaixo do recomendado") };
 
+else if Imc => 36 { document.write("Você esta acima do recomendado") };
 
-if(imc < 18.5) {
-    mostra("Você esta abaixo do recomendado")
-}
-
-if(imc > 35) {
-    mostra("Você esta acima do recomendado")
-}
-
-if(imc >= 18.5 && imc <= 35) {
-
-    mostra("Seu IMC está excelente")
-}
+else if Imc => 18 { document.write("Seu IMC está excelente") };
+else if Imc <= 35 { document.write("Seu IMC está excelente") };
 
 
 </script>

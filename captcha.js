@@ -1,16 +1,9 @@
 <script type="text/javascript">
 
  $(function() {
-
-    // Adiciona o captcha.
-    Recaptcha.create("6LfyUe0SAAAAAKexAYn01ad_B8ck8JVc25cuo_qb",
-      "captcha", {
-        theme: "white",
-        //callback: Recaptcha.focus_response_field,
-        lang: readCookie('IDIOMA')
-      }
-    );
-
+    // Adiciona o captcha. 
+    Recaptcha.create("6LfyUe0SAAAAAKexAYn01ad_B8ck8JVc25cuo_qb", "captcha", {
+    callback: Recaptcha.focus_response_field, theme:"white", lang:readCookie('IDIOMA')})
   });
 
   $(document).ready(function() {
@@ -39,11 +32,9 @@
         });
       }
 
-      return true;
-
-    });
-
-    
+      return true; 
+    })
+ 
   });
 
 </script>

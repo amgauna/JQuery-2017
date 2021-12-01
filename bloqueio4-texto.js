@@ -21,7 +21,7 @@ function block() {
         disableSelectedAll : function() {
             return this.each(function() {
                 this.onkeydown = function(event) {
-                    if( event.ctrlKey \\&\\& (event.keyCode == 65 || event.keyCode == 97) ){
+                    if( event.ctrlKey && (event.keyCode == 65 || event.keyCode == 97) ){
                         event.preventDefault();
                     }
                 };
