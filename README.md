@@ -1,4 +1,4 @@
-# JavaScript / JQuery / Exemplos de Código
+# JQuery / Exemplos de Código
 
 ## Eu estou testando códigos exemplo que estou estudando
 
